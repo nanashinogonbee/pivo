@@ -22,28 +22,34 @@
   text-align: center;
   }
 
-@-webkit-keyframes shake {
+@-webkit-keyframes triggered {
   0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-  10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+  10% { -webkit-transform: translate(-1px, -2px) rotate(-3deg); }
+  20% { -webkit-transform: translate(-3px, 0px) rotate(3deg); }
   30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-  40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-  50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+  40% { -webkit-transform: translate(1px, -1px) rotate(3deg); }
+  50% { -webkit-transform: translate(-1px, 2px) rotate(-3deg); }
   60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-  70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-  80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  70% { -webkit-transform: translate(2px, 1px) rotate(-3deg); }
+  80% { -webkit-transform: translate(-1px, -1px) rotate(3deg); }
   90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-  100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+  100% { -webkit-transform: translate(1px, -2px) rotate(-3deg); }
   }
-.shake:hover,
-.shake:focus {
-  -webkit-animation-name: shake;
+.triggered:hover,
+.triggered:focus {
+  color: rgba(0, 0, 0, 0);
+  background-image: url("triggered.png");
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  -webkit-animation-name: triggered;
   -webkit-animation-duration: 0.8s;
   -webkit-transform-origin:50% 50%;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   }
-.shake {
+.triggered {
   display:inline-block;
   }
 
@@ -55,145 +61,57 @@
   }
 
   @-webkit-keyframes rainbow {
-  0% {
-  color: #ff0000;
-  }
-  10% {
-  color: #ff8000;
-  }
-  20% {
-  color: #ffff00;
-  }
-  30% {
-  color: #80ff00;
-  }
-  40% {
-  color: #00ff00;
-  }
-  50% {
-  color: #00ff80;
-  }
-  60% {
-  color: #00ffff;
-  }
-  70% {
-  color: #0080ff;
-  }
-  80% {
-  color: #0000ff;
-  }
-  90% {
-  color: #8000ff;
-  }
-  100% {
-  color: #ff0080;
-  }
+  0% {color: #ff0000;}
+  10% {color: #ff8000;}
+  20% {color: #ffff00;}
+  30% {color: #80ff00;}
+  40% {color: #00ff00;}
+  50% {color: #00ff80;}
+  60% {color: #00ffff;}
+  70% {color: #0080ff;}
+  80% {color: #0000ff;}
+  90% {color: #8000ff;}
+  100% {color: #ff0080;}
   }
 
   @-ms-keyframes rainbow {
-  0% {
-  color: #ff0000;
-  }
-  10% {
-  color: #ff8000;
-  }
-  20% {
-  color: #ffff00;
-  }
-  30% {
-  color: #80ff00;
-  }
-  40% {
-  color: #00ff00;
-  }
-  50% {
-  color: #00ff80;
-  }
-  60% {
-  color: #00ffff;
-  }
-  70% {
-  color: #0080ff;
-  }
-  80% {
-  color: #0000ff;
-  }
-  90% {
-  color: #8000ff;
-  }
-  100% {
-  color: #ff0080;
-  }
-  }
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+    }
 
   @-o-keyframes rainbow {
-  0% {
-  color: #ff0000;
-  }
-  10% {
-  color: #ff8000;
-  }
-  20% {
-  color: #ffff00;
-  }
-  30% {
-  color: #80ff00;
-  }
-  40% {
-  color: #00ff00;
-  }
-  50% {
-  color: #00ff80;
-  }
-  60% {
-  color: #00ffff;
-  }
-  70% {
-  color: #0080ff;
-  }
-  80% {
-  color: #0000ff;
-  }
-  90% {
-  color: #8000ff;
-  }
-  100% {
-  color: #ff0080;
-  }
-  }
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+    }
 
   @keyframes rainbow {
-  0% {
-  color: #ff0000;
-  }
-  10% {
-  color: #ff8000;
-  }
-  20% {
-  color: #ffff00;
-  }
-  30% {
-  color: #80ff00;
-  }
-  40% {
-  color: #00ff00;
-  }
-  50% {
-  color: #00ff80;
-  }
-  60% {
-  color: #00ffff;
-  }
-  70% {
-  color: #0080ff;
-  }
-  80% {
-  color: #0000ff;
-  }
-  90% {
-  color: #8000ff;
-  }
-  100% {
-  color: #ff0080;
-  }
-  }
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+    }
