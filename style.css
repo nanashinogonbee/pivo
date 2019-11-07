@@ -13,7 +13,7 @@
 #buttons{
   position: absolute;
   left: 50%;
-}
+  }
 
 #invite{
   font-family: monospace;
@@ -52,7 +52,6 @@
   -ms-animation: rainbow 5s infinite;
   -o-animation: rainbow 5s infinite;
   animation: rainbow 5s infinite;
-  cursor: pointer;
   }
 
   @-webkit-keyframes rainbow {
